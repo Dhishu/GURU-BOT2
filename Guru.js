@@ -169,7 +169,7 @@ global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse()
 global.prefix = new RegExp(
   '[!,.]'
 )
-global.opts['db'] = 'mongodb+srv://jalek17687:cVwN5N6EP3rDeUQB@cluster0.v813n18.mongodb.net/'
+global.opts['db'] = null//'mongodb+srv://jalek17687:cVwN5N6EP3rDeUQB@cluster0.v813n18.mongodb.net/'
 
 global.db = new Low(
   /https?:\/\//.test(opts['db'] || '')
